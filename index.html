@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+  <meta name="theme-color" content="#eef7ff">
+  <title>Pogodka Kids Web V1.9 Smart Walk Forecast Engine</title>
+  <link rel="stylesheet" href="app.css">
+<link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">POGODKA KIDS</div>
+      <h1 id="screenTitle">Головна</h1>
+    </div>
+    <button id="weatherRefreshTop" class="icon-btn" title="Оновити погоду">↻</button>
+  </header>
+
+  <main id="screen" class="screen"></main>
+
+  <nav class="bottom-nav" id="bottomNav">
+    <button data-screen="home" class="active"><span>⌂</span><small>ГОЛОВНА</small></button>
+    <button data-screen="children"><span>☺</span><small>ДІТИ</small></button>
+    <button data-screen="wardrobe"><span>▣</span><small>ГАРДЕРОБ</small></button>
+    <button data-screen="weather"><span>☁</span><small>ПОГОДА</small></button>
+    <button data-screen="outfit"><span>👕</span><small>ОБРАЗ</small></button>
+    <button data-screen="day"><span>◷</span><small>МІЙ ДЕНЬ</small></button>
+    <button data-screen="now"><span>●</span><small>ЗАРАЗ</small></button>
+    <button data-screen="settings"><span>⚙</span><small>НАЛАШТ.</small></button>
+  </nav>
+</div>
+<script src="app.js"></script>
+<script src="v1.9.js"></script>
+
+<section id="smartRecommendationCard" class="smart-rec-card" style="display:none">
+  <div class="smart-rec-title">Розумна рекомендація</div>
+  <div id="smartRecommendationSummary" class="smart-rec-summary"></div>
+  <div id="smartRecommendationReason" class="smart-rec-reason"></div>
+  <div id="smartRecommendationActions" class="smart-rec-actions"></div>
+</section>
+
+
+</body>
+</html>
